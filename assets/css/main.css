@@ -87,3 +87,21 @@ body {
   outline: none;
   border: 1px solid #cccccc;
 }
+
+@media screen and (min-width: 768px) {
+  .app {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .app__main-title {
+    width: 100%;
+    font-size: 7.2rem;
+  }
+
+  .app__item {
+    width: 30%;
+  }
+}
