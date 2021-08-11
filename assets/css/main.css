@@ -6,9 +6,84 @@
   font-family: "Open sans", sans-serif;
 }
 
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 16px;
+  background-image: url("../img/coronavirus-covid-19.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .container {
   padding: 0 25px;
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 30px 0;
+}
+
+.app__main-title {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.app__item {
+  background-color: #f1f1f1;
+  border: 1px solid #cccccc;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.app__title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.app__total {
+  margin-bottom: 5px;
+}
+
+.app__daily {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.app__select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 16px;
+  border: 1px solid #f1f1f1;
+}
+
+.app__option {
+}
+
+.app__input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #cccccc;
 }
