@@ -5,3 +5,10 @@
   margin: 0;
   font-family: "Open sans", sans-serif;
 }
+
+.container {
+  padding: 0 25px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}

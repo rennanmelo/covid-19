@@ -11,5 +11,36 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="app">
+    <div class="container">
+      <h1 class="app__main-title">Covid-19</h1>
+      <section class="app__item">
+        <h2 class="app__title">Total Confirmed</h2>
+        <p class="app__total" id="total-confirmed"></p>
+        <p class="app__daily" id="daily-confirmed"></p>
+      </section>
+      <section class="app__item">
+        <h2 class="app__title">Total Deaths</h2>
+        <p class="app__total" id="total-deaths"></p>
+        <p class="app__daily" id="daily-deaths"></p>
+      </section>
+      <section class="app__item">
+        <h2 class="app__title">Total Recovered</h2>
+        <p class="app__total" id="total-recovered"></p>
+        <p class="app__daily" id="daily-recovered"></p>
+      </section>
+      <section class="app__item">
+        <h2 class="app__title">Total Actives</h2>
+        <p class="app__total" id="total-actives"></p>
+        <p class="app__daily" id="daily-actives"></p>
+      </section>
+      <section class="app__item app__item--input">
+        <select class="app__select" id="countries">
+          <option class="app__option">Global</option>
+        </select>
+        <input class="app__input" id="date" min="2020-01-01" />
+      </section>
+    </div>
+  </div>
 </body>
 </html>
