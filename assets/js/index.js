@@ -32,3 +32,22 @@ const loadCountries = (data) => {
     );
   }
 };
+
+const loadSummary = (data) => {
+  let confirmed = document.getElementById("total-confirmed"),
+    death = document.getElementById("total-deaths"),
+    recovered = document.getElementById("total-recovered"),
+    active = document.getElementById("total-actives");
+
+  console.log(data);
+
+  confirmed.innerText = data.Global.TotalConfirmed.toLocaleString("EN");
+  death.innerText = data.Global.TotalDeaths.toLocaleString("EN");
+  // The API is not giving the correct recovered data
+  recovered.innerText = data.Global.TotalRecovered.toLocaleString("EN");
+  active.innerText = (
+    data.Global.TotalConfirmed -
+    data.Global.TotalDeaths -
+    data.Global.TotalRecovered
+  ).toLocaleString("EN");
+};
