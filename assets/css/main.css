@@ -61,9 +61,20 @@ body {
 }
 
 .app__daily {
-  text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__icon {
+  margin-right: 10px;
+  width: 18px;
+}
+
+.app__icon--increase {
+  transform: rotate(180deg);
 }
 
 .app__select {
